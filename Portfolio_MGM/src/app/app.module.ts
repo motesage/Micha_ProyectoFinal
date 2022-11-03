@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { CabezalComponent } from './componentes/cabezal/cabezal.component';
 import { Logo1Component } from './componentes/logo1/logo1.component';
 import { Logo2Component } from './componentes/logo2/logo2.component';
@@ -20,12 +23,14 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
     BannerComponent,
     AboutComponent,
     ExperienciaComponent,
-    EducacionComponent
+    EducacionComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
