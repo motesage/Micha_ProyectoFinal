@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { CabezalComponent } from './componentes/cabezal/cabezal.component';
 import { Logo1Component } from './componentes/logo1/logo1.component';
@@ -13,6 +14,7 @@ import { BannerComponent } from './componentes/banner/banner.component';
 import { AboutComponent } from './componentes/about/about.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,14 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
     AboutComponent,
     ExperienciaComponent,
     EducacionComponent,
+    HabilidadesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    NgCircleProgressModule.forRoot({})
     ],
   providers: [],
   bootstrap: [AppComponent]
