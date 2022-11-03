@@ -16,6 +16,7 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
 import { PieComponent } from './componentes/pie/pie.component';
+import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PieComponent } from './componentes/pie/pie.component';
     EducacionComponent,
     HabilidadesComponent,
     PieComponent,
+    ProyectosComponent,
   ],
   imports: [
     BrowserModule,
