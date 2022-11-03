@@ -33,7 +33,19 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({
+      radius:100,
+      outerStrokeWidth:16,
+      innerStrokeWidth:8,
+      outerStrokeColor:"#8E44AD",
+      innerStrokeColor:"#5B2C6F",
+      titleFontSize:"25px",
+      subtitleColor:"#5B2C6F",
+      animation:true,
+      animationDuration:500,
+      showUnits:false,
+      subtitleFontSize:"25px"
+    })
     ],
   providers: [],
   bootstrap: [AppComponent]

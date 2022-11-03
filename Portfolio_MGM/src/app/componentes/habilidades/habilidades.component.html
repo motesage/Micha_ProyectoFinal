@@ -1,10 +1,45 @@
-<circle-progress
-  [percent]="85"
-  [radius]="100"
-  [outerStrokeWidth]="16"
-  [innerStrokeWidth]="8"
-  [outerStrokeColor]="'#78C000'"
-  [innerStrokeColor]="'#C7E596'"
-  [animation]="true"
-  [animationDuration]="400"
-></circle-progress>
+<div class="row">
+    <h1>Habilidades hard / soft</h1>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="85"
+        [title]= "'Base de datos'"
+        [subtitle]= "'85 %'"
+        ></circle-progress>
+    </div>    
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="95"
+        [title]= "'Delphi'"
+        [subtitle]= "'95 %'"
+        ></circle-progress>
+    </div>    
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="50"
+        [title]= "'HTML'"
+        [subtitle]= "'50 %'"
+        ></circle-progress>
+    </div>    
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="65"
+        [title]= "'Angular'"
+        [subtitle]= "'65 %'"
+        ></circle-progress>
+    </div>    
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="100"
+        [title]= "'Comunicación'"
+        [subtitle]= "'100 %'"
+        ></circle-progress>
+    </div>    
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="100"
+        [title]= "'Inglés'"
+        [subtitle]= "'100 %'"
+        ></circle-progress>
+    </div>    
+</div>
