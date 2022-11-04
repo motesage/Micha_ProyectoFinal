@@ -7,6 +7,6 @@ div {
 }
 
 /* Para que se muestren en la misma linea !!!  */
-h1,h3 {
+h1,h2,h3 {
   display: inline;
 }

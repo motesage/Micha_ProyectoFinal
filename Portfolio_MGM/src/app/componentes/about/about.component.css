@@ -13,75 +13,33 @@ div {
     margin-left: 10px;
 }
 
-/* para ajustar la foto usamos media query de bootstrap */
+/* 
+  para ajustar la foto usamos media query de bootstrap 
+  priemro pongo las caracteristicas comunes en un primer estilo
+*/
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 575px) {  
-  #mifoto{
-    position: absolute;
-    border-radius: 30%;
-    box-shadow: 3px 3px 3px black; 
-    width: 25%;
-    left:3%;
-    top:400px;
-  }
-}
 
+/* de 576px hacia arriba (para mayor tamaño) */
 @media (min-width: 576px) {  
   #mifoto{
     position: absolute;
-    border-radius: 30%;
+    border-radius: 60%;
     box-shadow: 3px 3px 3px black; 
+    left: 3%;
     width: 15%;
-    left:3%;
-    top:300px;
+    top: 300px;
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* Small devices (landscape phones, 576px y MENOS) */
+@media (max-width: 576px) {  
   #mifoto{
     position: absolute;
-    border-radius: 30%;
+    border-radius: 60%;
     box-shadow: 3px 3px 3px black; 
-    width: 12%;
-    left:3%;
-    top:30%;
+    left: 3%;
+    width: 20%;
+    top: 390px;
   }
 }
 
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #mifoto{
-    position: absolute;
-    border-radius: 30%;
-    box-shadow: 3px 3px 3px black; 
-    width: 12%;
-    left:3%;
-    top:30%;
-  }
-}
-
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  #mifoto{
-    position: absolute;
-    border-radius: 30%;
-    box-shadow: 3px 3px 3px black; 
-    width: 12%;
-    left:3%;
-    top:30%;
-  }
-}
-
-/* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  #mifoto{
-    position: absolute;
-    border-radius: 30%;
-    box-shadow: 3px 3px 3px black; 
-    width: 12%;
-    left:3%;
-    top:30%;
-  }
-}

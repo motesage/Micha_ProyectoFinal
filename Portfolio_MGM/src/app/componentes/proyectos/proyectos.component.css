@@ -1,17 +1,22 @@
 .row {
-    padding: 20px;
-    background:#aadcca;
+   padding: 20px;
+   background:#aadcca;
   }
 
-  .contenedor {
-    width: auto;
+ .contenedor {
+   width: auto;
   }
 
-  .parte1, .parte2 {
-    display: inline-block;
-    text-align: justify;
+ .parte1, .parte2 {
+   display: inline-block;
+   text-align: justify;
   }
 
-  .img-proyectos {
-    box-shadow: 10px 10px 30px #000000;
+ .img-proyectos {
+   box-shadow: 10px 10px 30px #000000;
   }
+
+  h3 {
+   color: rgb(32, 32, 140);
+  }
+  
