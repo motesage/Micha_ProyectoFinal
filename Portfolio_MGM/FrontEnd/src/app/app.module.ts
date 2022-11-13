@@ -16,6 +16,7 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
 import { PieComponent } from './componentes/pie/pie.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
       animationDuration:500,
       showUnits:false,
       subtitleFontSize:"25px"
-    })
+    }),
+    HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]
