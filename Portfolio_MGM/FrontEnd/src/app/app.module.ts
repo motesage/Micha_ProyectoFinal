@@ -17,6 +17,8 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
 import { PieComponent } from './componentes/pie/pie.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './componentes/home/home.component';
+import { LoginComponent } from './componentes/login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     HabilidadesComponent,
     PieComponent,
     ProyectosComponent,
+    HomeComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
