@@ -4,6 +4,7 @@ import com.portfolio.micha.model.Perfil;
 import com.portfolio.micha.service.IPerfilService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,12 +31,15 @@ public class perfilController {
        return iperfilService.getPerfil();
    }
 
+   // para validar el persimo de acuerdo al ROL !!
+   @PreAuthorize("hasRole('ADMIN')")
    @PostMapping("perfiles/new") 
    public String crearPerfil(@RequestBody Perfil perf) {
        iperfilService.savePerfil(perf);
        return "Perfil " + perf.getId() + " creada";
    }
   
+   @PreAuthorize("hasRole('ADMIN')")
    @DeleteMapping("perfiles/delete/{id}") 
    public String deletePerfil(@PathVariable Long id) {
        iperfilService.deletePerfil(id);
@@ -43,6 +47,7 @@ public class perfilController {
    }
 
    //localhost:8080/perfiles/edit/4?nombre&apellido&img
+   @PreAuthorize("hasRole('ADMIN')")
    @PutMapping("perfiles/edit/{id}") 
    public Perfil editPerfil(@PathVariable Long id,
            @RequestParam("nombre") String newnombre,
@@ -62,6 +67,5 @@ public class perfilController {
     public Perfil findPerfil(){
         return iperfilService.findPerfil((long)1);
    }
-   
     
 }
