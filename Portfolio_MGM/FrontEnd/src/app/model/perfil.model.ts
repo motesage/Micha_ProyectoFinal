@@ -1,10 +1,10 @@
 export class perfil{
     id?: number;
-    nombre: String;
-    apellido: String;
-    fileImagen: String;
+    nombre: string;
+    apellido: string;
+    fileImagen: string;
 
-    constructor(nombre: String, apellido: String, fileImagen: String){
+    constructor(nombre: string, apellido: string, fileImagen: string){
        this.nombre = nombre; 
        this.apellido = apellido;
        this.fileImagen = fileImagen;

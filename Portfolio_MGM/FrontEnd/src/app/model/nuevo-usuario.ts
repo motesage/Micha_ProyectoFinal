@@ -1,8 +1,8 @@
 export class NuevoUsuario {
-    nombre!: String;
-    nombreUsuario!: String;
-    email!: String;
-    password!: String;
-    authority!: String[];
+    nombre!: string;
+    nombreUsuario!: string;
+    email!: string;
+    password!: string;
+    authority!: string[];
     /* el signo de adminracion ! es para que ignore el error (falta inicializacion de las variables) */
 }
